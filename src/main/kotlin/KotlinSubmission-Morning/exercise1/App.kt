@@ -28,7 +28,8 @@ fun myProfile() {
  *  Lengkapi fungsi di bawah ini agar dapat mencetak nilai dari parameter-parameter yang ada dengan fungsi println
  */
 fun groupDetail(groupId: String, groupMember: List<Any>, session: String): Any {
-    return "$groupId, $groupMember, $session"
+    println("$groupId, $groupMember, $session")
+    return ""
 }
 
 /**
@@ -38,8 +39,8 @@ fun groupDetail(groupId: String, groupMember: List<Any>, session: String): Any {
  *
  */
 fun myTeam(): List<Any> {
-
-    return listOf()
+    val akatsuki = listOf("Ikhsan", "Kimberly", "Irfan", "Faza", "Dzikri", "Salim", "Putri", "Sambas", "Rehana", "Ari", "Farhan")
+    return listOf(akatsuki[1])
 }
 
 /**
@@ -50,10 +51,10 @@ fun myTeam(): List<Any> {
  *
  */
 fun totalMember(): Int {
-    val mentor = arrayOf<String>()
-    val countOfGroup = arrayOf<String>()
+    val mentor = arrayOf<String>("Kak Reza", "Kak Widya", "Kak Ayyat")
+    val countOfGroup = arrayOf<String>("Ikhsan", "Kimberly", "Irfan", "Faza", "Dzikri", "Salim", "Putri", "Sambas", "Rehana", "Ari", "Farhan")
 
-    return 0
+    return mentor.size + countOfGroup.size
 }
 
 fun main() {
@@ -71,6 +72,8 @@ fun main() {
      *  Ubah nilai argumen-argumen dari fungsi groupDetail di bawah ini sesuai dengan data group kamu
      *
      */
-    groupDetail("", listOf(), "")
+    groupDetail("Akatsuki",
+        listOf("Ikhsan", "Kimberly", "Irfan", "Faza", "Dzikri", "Salim", "Putri", "Sambas", "Rehana", "Ari", "Farhan"),
+        "Morning")
 
 }
