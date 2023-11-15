@@ -10,7 +10,16 @@ Lengkapi fungsi myProfile di bawah ini dengan membuat variabel dengan ketentuan 
 Dan Cetak setiap variabel ke layar saat variable myProfile di panggil
  */
 fun myProfile() {
+    val namaDepan = "Kimberly"
+    val namaBelakang = ""
+    val umur = 20
+    val single = true
 
+    println("""
+        $namaDepan $namaBelakang
+        $umur
+        $single
+    """.trimIndent())
 }
 
 
@@ -19,7 +28,7 @@ fun myProfile() {
  *  Lengkapi fungsi di bawah ini agar dapat mencetak nilai dari parameter-parameter yang ada dengan fungsi println
  */
 fun groupDetail(groupId: String, groupMember: List<Any>, session: String): Any {
-    return ""
+    return "$groupId, $groupMember, $session"
 }
 
 /**
