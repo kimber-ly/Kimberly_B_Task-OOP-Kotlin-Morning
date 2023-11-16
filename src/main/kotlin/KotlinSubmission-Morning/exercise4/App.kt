@@ -3,8 +3,8 @@ package id.infinitelearning.KotlinSubmission.exercise4
 import java.lang.IndexOutOfBoundsException
 
 fun main() {
-    val list1 = listOf("Ikhsan, Kimberly, Irfan, Faza, Dzikri", "Akatsuki Mobile")
-    tryCatch(list1)
+    val list = listOf("Ikhsan, Kimberly, Irfan, Faza, Dzikri", "Akatsuki Mobile")
+    tryCatch(list)
 }
     /**
      * Buatlah contoh code penggunaan try catch untuk menangani suatu kasus sesuai keinginan teman-teman
