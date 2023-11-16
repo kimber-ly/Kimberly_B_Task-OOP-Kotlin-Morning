@@ -69,15 +69,32 @@ fun main() {
      * Jalankan aktivitas-aktivitas dengan memanggil fungsi-fungsi sesuai challenge diatas
      *
      */
+    repeat(2) {
+        hero.jalan()
+    }
 
+    hero.lari()
 
+    repeat(2) {
+        hero.makan()
+    }
+
+    hero.minum()
+
+    repeat(2) {
+        hero.lompat()
+    }
+
+    repeat(4){
+        hero.duduk()
+    }
 
     /**
      * Latihan 5
      * Panggil fungsi profile dibawah ini untuk menampilkan status terkini setelah melakukan aktivitas
      *
      */
-
+    hero.profile()
 
 
 }
